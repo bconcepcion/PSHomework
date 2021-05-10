@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-image: url("https://placekitten.com/200/300");
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  position: relative;
+
+
+}
+
+.circle {
+  border: 5px dotted black;
+  border-radius: 50%;
+  opacity: ;
+  background-color: rgb(204, 144, 209);
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+}
+
+#circle-5 {
+  border: 5px dotted rgb(65, 56, 56);
+  border-radius: 50%;
+  opacity: 1;
+  background-color: rgb(204, 144, 209);
+
+}
+
+.circle:hover {
+  opacity: 0;
+
+}
+
+
+#controlos {
+  width: 200px;
+  margin: 2rem auto;
+  padding-left: 5rem;
+
+}
+
+#controlos input {
+  text-align: center;
+}
+
+#clock {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+}

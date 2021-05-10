@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>Shapes HW</h1>
+    <p id="display"></p>
+
+
+    <script>
+        let text = "<ul>";
+
+class Circle {
+    constructor(radius) {
+        this.radius = radius
+    }
+    calcArea() {
+        text = text + "<h2>Circle</h2><br><li>The area of a circle is " + Math.PI * (this.radius * this.radius) + "</li><br>";
+    }
+    calcCircumference() {
+        text = text + "<li>The circumference of a circle is " + (2 * Math.PI * this.radius) + "</li><br>"
+    }
+}
+
+class Rectangle {
+    constructor(length, width) {
+    this.length = length;
+    this.width = width;
+    }
+    rectAreaCalc() {
+    text = text + "<h2>Rectangle</h2><br><p1>The number of sides is " + (this.width * this.length) + "</p1><br>";
+    }
+    allSides(side1 = 1, side2 = 1, side3 = 1, side4 = 1) {
+    let numberofSides = side1 + side2 + side3 + side4
+    this.numberofSides = numberofSides
+    text = text + "<p1>The number of sides is " + (this.numberofSides) + "</p1><br>"
+    }
+
+}
+
+class Square {
+    constructor(width) {
+        this.width = width;
+    }
+    sqrAreaCalc() {
+    text = text + "<h2>Square</h2><br><p1>The area of a square " + (this.width * this.width) + "</p1><br>";
+    }
+    allSides(side1 = 1, side2 = 1, side3 = 1, side4 = 1) {
+    let numberofSides = side1 + side2 + side3 + side4
+    this.numberofSides = numberofSides
+    text = text + "<p1>The number of sides is " + (this.numberofSides) + "</p1><br>"
+    }
+
+
+}
+
+        const circle1 = new Circle(50);
+        circle1.calcArea();
+        circle1.calcCircumference();
+        const rectangle1 = new Rectangle(15, 4);
+        rectangle1.rectAreaCalc();
+        rectangle1.allSides();
+        const square1 = new Square(15);
+        square1.sqrAreaCalc();
+        square1.allSides();
+        text = text + "</ul>"
+        document.getElementById("display").innerHTML = text 
+
+
+
+    </script>
+</body>
+</html>

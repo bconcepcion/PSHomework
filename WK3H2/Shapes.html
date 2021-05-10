@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+</head>
+<body> 
+    <h1>Shapes</h1>
+    
+
+    <script>
+/*
+Define a new class called Circle with appropriate attributes and instantiate a few Circle objects.
+Write a function called circle_area that returns the area of the object. 
+Write a function total_sides that returns the number of sides of the object.
+Define a new class called Rectangle with appropriate attributes and instantiate a few Rectangle objects.
+Write a function called rectangle_area that returns the area of the given object.
+Write a function total_sides that returns the number of sides of the object.
+Define a new class called Square with appropriate attributes and instantiate a few Square objects.
+Write a function called square_area that returns the area of the given object.
+Write a function total_sides that returns the number of sides of the objec
+
+*/
+var text = "<ul>"
+
+
+    class Circle{
+        constructor(radius){
+            this.radius=radius;
+        }
+
+        areaCalc(){
+        this.area=Math.PI * this.radius * this.radius
+    }
+        displayArea(){
+            text = text + "<li>" + "Area of circle:" + this.area + "</li>"
+        }
+    }
+
+    
+    
+const crcl = new Circle(4);
+crcl.areaCalc();
+crcl
+    </script>
+</body>
+</html>

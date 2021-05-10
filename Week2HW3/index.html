@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid" id='container'>
+        <div class="circle" id="circle-1"></div>
+        <div class="circle" id="circle-2"></div>
+        <div class="circle" id="circle-3"></div>
+        <div class="circle" id="circle-4"></div>
+        <div id="circle-5">
+            <div id="controlos">
+                <input id="txtTempo" type="text" value="10" size="4" maxlength="4"><button id="btnStart">Start</button>
+            </div>
+            
+            <div id="clock" class="blue">00:00</div>
+        </div>
+        <div class="circle" id="circle-6"></div>
+        <div class="circle" id="circle-7"></div>
+        <div class="circle" id="circle-8"></div>
+        <div class="circle" id="circle-9"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        var colors = ["blue", "orange", "red", "yellow"];
+        var currentColor = 0;
+
+        const grids = document.querySelectorAll('.circle');
+        grids.forEach((grid) => {
+            grid.style.backgroundColor = "green";
+            
+            grid.addEventListener('click', function(evt) {
+                evt.preventDefault();
+            });
+            
+        });
+
+        window.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            var num = Math.floor(Math.random() * 4)
+            console.log('num :>> ', num);
+            grids.forEach((grid) => {
+                grid.style.backgroundColor = colors[num]
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
